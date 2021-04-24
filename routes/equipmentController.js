@@ -75,8 +75,9 @@ equipmentRouter.route('/:equipmentId')
                 var message = {
                     equipmentId: req.params.equipmentId,
                     networkAddress: equipment.networkAddress,
-                    Content: req.body
-                    //TODO: equipment
+                    goal: equipment.goal,
+                    auto: equipment.auto,
+                    turnedOn: equipment.turnedOn
                 }
                 client.publish(topic, JSON.stringify(message));
                 res.statusCode = 200;
