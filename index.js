@@ -13,8 +13,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(passport.initialize());
 
-const hostname = 'localhost';
-const port = 3444;
+const hostname = 'https://home-automation-21.herokuapp.com/';
+//const port = 3444;
 
 
 //Import Routes
